@@ -5,12 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
-    <link rel="stylesheet" href="style.css">
-    <title></title>
+    <link rel="stylesheet" href="../thevoid/css/style.css">
+    <title>Welcome to the Void</title>
 
 </head>
-<body>
+<!-- Assign body the default class of galaxy for galaxy theme -->
+<body class="galaxy">
+    <header>
+    <h1>Welcome to the Void</h1>
+    </header>
+<main>
+        <!-- Empty Section for Text Animation -->
+    <section id="animate-block"></section>
+        <!-- Group Input and Enter Button together -->
+    <section id="input-area">
+        <input id="input-field" type="text" placeholder="Type anything...">
+        <button id="enter-btn">Enter Text</button>
+    </section>
+</main>
+<!-- Change Theme Button -->
+<button id="change-theme-btn">Change Theme</button>
+<!-- Sidebar -->
+    <section id="sidebar">
+        <button id="close-sidebar-btn">X</button>
+        <section class="theme-buttons">
+            <a href="#"  id="galaxy">Galaxy</a>
+            <a href="#"  id="pastel">Pastel</a>
+            <a href="#"  id="ocean">Ocean</a>
+            <a href="#"  id="flames">Flames</a>
+            <a href="#"  id="zen">Zen</a>
+            <a href="#"  id="nature">Nature</a>
+        </section>
+    </section>
     
 </body>
 </html>
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="../thevoid/js/script.js"></script>

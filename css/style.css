@@ -17,6 +17,44 @@ header{
     justify-content: center;
 }
 
+main, #input-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input{
+    width: 35vw;
+    border-radius: 5px;
+    border-width: 3px;
+    padding: 1vh 2vw;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+}
+
+
+button{
+    margin-top: 3vh;
+    background-color: var(--buttonBackground);
+    color: var(--buttonText);
+    padding: 10px 30px;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+}
+
+button:hover{
+    transition: 0.25s;
+    background-color: var(--buttonHoverBackground);
+    color: var(--buttonHoverColor);
+    cursor: pointer;
+}
+
+
+/* SIDEBAR & BUTTONS */
 #change-theme-btn{
     position:absolute;
     right: 2vw;
@@ -57,11 +95,10 @@ header{
     text-decoration: none;
     font-size: 25px;
     margin-bottom: 5vh;
-
+    background: none;
 }
 
 .theme-buttons {
-    
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -153,43 +190,6 @@ header{
     box-shadow: 5px 5px darkgreen;
   }
 
-main, #input-area{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-input{
-    width: 35vw;
-    border-radius: 5px;
-    border-width: 3px;
-    padding: 1vh 2vw;
-    font-size: 18px;
-    text-align: center;
-    border: none;
-}
-
-
-button{
-    /* height: 4vh;
-    width: 20vw; */
-    margin-top: 3vh;
-    background-color: var(--buttonBackground);
-    color: var(--buttonText);
-    padding: 10px 30px;
-    border-radius: 25px;
-    border: none;
-    font-size: 18px;
-}
-
-button:hover{
-    transition: 0.25s;
-    background-color: var(--buttonHoverBackground);
-    color: var(--buttonHoverColor);
-    cursor: pointer;
-}
 
 /* ANIMATION */
 
@@ -226,7 +226,7 @@ button:hover{
 }
 
 /* THEMES */
-
+/* Default theme is galaxy */
 .galaxy{
     --backgroundImage: url("https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     --headingColor: grey;
